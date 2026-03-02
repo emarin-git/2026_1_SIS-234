@@ -194,7 +194,7 @@ Para elevar el nivel técnico y académico del proyecto, se recomienda:
 
 ---
 
-# 9. Criterios de Calidad Esperados
+## 9. Criterios de Calidad Esperados
 
 - Código limpio y documentado.
 - Diseño modular.
