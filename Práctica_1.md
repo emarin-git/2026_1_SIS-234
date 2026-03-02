@@ -173,7 +173,7 @@ El informe debe contener las siguientes secciones mínimas:
 
 ---
 
-# 8. Sugerencias Técnicas para Mejorar la Actividad
+## 8. Sugerencias Técnicas para Mejorar la Actividad
 
 Para elevar el nivel técnico y académico del proyecto, se recomienda:
 
