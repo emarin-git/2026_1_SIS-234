@@ -1,4 +1,4 @@
-# Práctica 1 — Integración de Sensores y Actuadores en un Objeto Inteligente
+# Práctica 2 — Integración de Objetos Inteligentes con TCP/IP
 
 **Carrera:** Ingeniería de Sistemas
 **Asignatura:** SIS-234
