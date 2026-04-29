@@ -41,7 +41,7 @@ Se deberá diseñar e implementar un **sistema distribuido** compuesto por:
 1. El objeto inteligente deberá:
 - Capturar datos del entorno con sus sensores.
 - Reportar el estado de sus sensores a AWS IoT Core.
-- Recibir comandos del AWS IoT Core a través de su Shadow.
+- Recibir comandos de AWS IoT Core a través de su Shadow para controlar sus actuadores.
 2. Alexa deberá:
 - Recibir comandos del usuario.
 - Interactuar con el Shadow del objeto a través de su backend en AWS haciendo consultas y modificaciones al Shadow.
