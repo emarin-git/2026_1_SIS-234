@@ -16,9 +16,8 @@
 Evaluar el desarrollo de los siguientes saberes:
 
 ### 2.1 Saber Conceptual
-- Librerías y plataformas en la nube para el IoT: AWS IoT Core, AWS Lambda functions, AWS DynamoDB, AWS Athena.
-- Herramientas de AI: Amazon Alexa.
-- Analítica de datos para el IoT.
+- Librerías y plataformas en la nube para el IoT: AWS IoT Core, funciones AWS Lambda, AWS DynamoDB.
+- Herramientas de IA: Amazon Alexa.
 
 ### 2.2 Saber Procedimental
 - Implementa protocolos de aplicación con integración en la nube: MQTT.
@@ -36,24 +35,21 @@ Se deberá diseñar e implementar un **sistema distribuido** compuesto por:
 
 - Uno o varios **Objetos Inteligentes** con sensores y actuadores que cumplan una funcionalidad práctica, integrado a AWS IoT Core y con **Shadow**.
 - Alexa frontend mediante la interfaz de pruebas.
-- Alexa backend como función Lambda en AWS.
-- AWS IoT Rules + AWS Lambda functions para procesar y almacenar los datos del objeto inteligente, y para incluir lógica de negocio si la aplicación lo requiere.
-- AWS Athena conectado a DynamoDB para realizar consultas de los datos almacenados.
+- Alexa backend como función AWS Lambda.
+- AWS IoT Rules + funciones AWS Lambda para procesar y almacenar los datos del objeto inteligente, y para incluir lógica de negocio si la aplicación lo requiere.
 
 **Funcionamiento del sistema:**
 1. El objeto inteligente deberá:
 - Capturar datos del entorno con sus sensores.
 - Reportar el estado de sus sensores a AWS IoT Core.
 - Recibir comandos de AWS IoT Core a través de su Shadow para controlar sus actuadores.
-- Procesar lógica de negocio si la aplicación requiere que el procesamiento se realice en **Edge**.
+- Procesar lógica de negocio si la aplicación requiere que el procesamiento se realice en el **Edge**.
 2. Alexa deberá:
 - Recibir comandos del usuario.
 - Interactuar con el Shadow del objeto a través de su backend en AWS haciendo consultas y modificaciones al Shadow.
-3. AWS IoT Rules + AWS Lambda functions:
+3. AWS IoT Rules + funciones AWS Lambda:
 - Procesar y almacenar los datos del objeto inteligente en una base de datos NoSQL (DynamoDB).
-- Incluir lógica de negocio si la aplicación requiere procesamiento en la **Nube**.
-4. AWS Athena:
-- Permitir el realizar consultas SQL de los datos almacenados en DynamoDB. Los grupos deberán definir queries que obtengan información útil para un posterior análisis o para la toma de decisiones (Aún no es necesario implementar la visualización gráfica de la información, solo deberán mostrar las consultas y sus resultados en formato tabla).
+- Ejecutar la lógica de negocio si la aplicación requiere procesamiento en la **Nube**.
 
 > Nota: Cada grupo deberá definir sus requerimientos funcionales, no funcionales y la lógica de los algoritmos de control.
 
@@ -76,11 +72,11 @@ El informe debe contener las siguientes secciones mínimas:
    - Diagramas estructurales y de comportamiento
    - Diseño de la skill de Alexa
    - Diseño de reportes (mockups) con información relevante para la toma de decisiones
-   - Diseño del modelo de datos (tablas, columnas, tipos de datos, relaciones, etc.) para DynamoDB
+   - Diseño del modelo de datos (tablas, tipos de datos, claves, etc.) para DynamoDB
 3. **Implementación**
-   - Código fuente documentado
-   - Configuraciones en Alexa
-   - Configuraciones en AWS
+   - Código fuente documentado (firmware del Objeto Inteligente y lógica del backend en las funciones Lambda)
+   - Configuraciones en Alexa (Skill e Interaction Model)
+   - Configuraciones en AWS (IoT Core, Rules, Lambda y DynamoDB)
 4. **Pruebas y Validaciones**
 5. **Resultados**
 6. **Conclusiones**
